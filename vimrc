@@ -9,6 +9,8 @@ syntax enable
 filetype plugin on
 filetype plugin indent off
 
+set autoindent
+
 set background=dark
 colorscheme solarized
 
