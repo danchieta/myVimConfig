@@ -12,6 +12,11 @@ filetype plugin indent off
 set autoindent
 
 set background=dark
+
+if !has('gui_running')
+	let g:solarized_termcolors=256
+endif
+	
 colorscheme solarized
 
 set path+=**
@@ -22,4 +27,8 @@ set ts=4
 set sw=4
 set sts=0
 
-set guifont=Consolas:h12
+if has('win64') || has('win32')
+	set guifont=Consolas:h12
+else
+	set guifont=Monospace\ 13
+endif
