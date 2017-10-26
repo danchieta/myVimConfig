@@ -32,3 +32,5 @@ if has('win64') || has('win32')
 else
 	set guifont=Monospace\ 13
 endif
+
+autocmd BufNewFile,BufRead *.tex set spell spelllang=pt
