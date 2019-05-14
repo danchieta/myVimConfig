@@ -13,11 +13,8 @@ set autoindent
 
 set background=dark
 
-if !has('gui_running')
-	let g:solarized_termcolors=256
-endif
-	
-colorscheme solarized
+let g:gruvbox_italic=1
+colorscheme gruvbox
 
 set path+=**
 
@@ -33,4 +30,6 @@ else
 	set guifont=Monospace\ 13
 endif
 
-autocmd BufNewFile,BufRead *.tex set spell spelllang=pt
+autocmd BufNewFile,BufRead *.tex set spell spelllang=en
+autocmd BufNewFile,BufRead *.md set spell spelllang=pt
+autocmd BufNewFile,BufRead *.md set background=light
