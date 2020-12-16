@@ -7,14 +7,17 @@ set encoding=utf-8
 
 syntax enable
 filetype plugin on
-filetype plugin indent off
+filetype indent off
 
 set autoindent
 
 set background=dark
 
-let g:gruvbox_italic=1
-colorscheme gruvbox
+let g:tex_flavor = 'latex'
+let g:vimtex_compiler_enabled = 0
+
+"let g:gruvbox_italic=1
+colorscheme xcodewwdc
 
 set path+=**
 
@@ -27,9 +30,12 @@ set sts=0
 if has('win64') || has('win32')
 	set guifont=Consolas:h12
 else
-	set guifont=Monospace\ 13
+	set guifont=SF\ Mono\ 13
 endif
+
+set colorcolumn=80
 
 autocmd BufNewFile,BufRead *.tex set spell spelllang=en
 autocmd BufNewFile,BufRead *.md set spell spelllang=pt
-autocmd BufNewFile,BufRead *.md set background=light
+
+command Ltxbuild ! latex_build %
