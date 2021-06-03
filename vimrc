@@ -17,7 +17,7 @@ let g:tex_flavor = 'latex'
 let g:vimtex_compiler_enabled = 0
 
 "let g:gruvbox_italic=1
-colorscheme xcodewwdc
+colorscheme gruvbox
 
 set path+=**
 
