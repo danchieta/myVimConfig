@@ -9,6 +9,7 @@ syntax enable
 filetype plugin on
 filetype indent off
 
+"Copy inndent from current line when starting a new line
 set autoindent
 
 set background=dark
@@ -21,6 +22,7 @@ colorscheme gruvbox
 
 set path+=**
 
+"Improved menu when completing commands
 set wildmenu
 
 set ts=4
